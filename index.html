@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <!-- Header Section -->
+       <header>
+        <h1>Library Management To-Do List</h1>
+        <nav>
+            <ul>
+                <li><a href="#task-input">Add Task</a></li>
+                <li><a href="#task-list">Task List</a></li>
+                <li><a href="#book-tracking">Book Tracking</a></li>
+                <li><a href="#patron-management">Patron Management</a></li>
+                <li><a href="#reporting">Reporting & Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="task-input">
+            <h2>Add New Task</h2>
+            <input type="text" id="task-input" placeholder="Enter a new task" />
+            <input type="datetime-local" id="due-date" />
+            <select id="priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section class="task-list">
+            <h2>Task List</h2>
+            <ul id="task-list">
+                <!-- Tasks will be displayed here -->
+            </ul>
+        </section>
+
+        <section class="book-tracking">
+            <h2>Book Tracking</h2>
+            <p>Book availability and circulation info will be shown here.</p>
+        </section>
+
+        <section class="patron-management">
+            <h2>Patron Management</h2>
+            <p>Manage patron info, checkouts, and fines.</p>
+        </section>
+
+        <section class="reporting">
+            <h2>Reporting & Analytics</h2>
+            <p>Generate reports and analyze task completion.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 University Library Management</p>
+        <p>Contact: info@universitylibrary.com</p>
+        <div>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
